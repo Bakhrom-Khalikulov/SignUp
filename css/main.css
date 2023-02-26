@@ -44,3 +44,154 @@
     url('../fonts/roboto-v30-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+:root{
+    --bg-color: #4d515d;
+    --main-bg-color: #fff;
+    --title-text-color: #000;
+    --text-color: #8b8b8d;
+    --desc-color: #aaa;
+
+}
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: var(--bg-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ****************** MEMBERSHIP STYLE STARTS***************** */
+.member-section{
+    padding-top: 90px;
+    padding-bottom: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.member__wrapper{
+    display: flex;
+    max-width: 650px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.member__wrapper--start{
+    width: 100%;
+    padding-left: 40px;
+    background-color: var(--main-bg-color);
+}
+
+.member__wrapper--start--info{
+    margin-bottom: 30px;
+}
+
+.member__title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-top: 55px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.member__desc{
+    margin-top: 0;
+    margin-bottom: 2px;
+    line-height: 0.8;
+    font-weight: 600;
+    font-size: 9px;
+    color: var(--desc-color);
+}
+
+.member__logo{
+    padding-left: 10px;
+    margin-right: 70px;
+}
+
+.member__links{
+    padding: 9px 9px 12px 9px;
+    margin-bottom: 8px;
+    display: inline-block;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    width: 300px;
+    font-size: 9px;
+    font-weight: 600;
+    color: var(--desc-color);
+}
+
+.member__links:active{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.member_text{
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.member_email{
+    font-size: 7px;
+    font-weight: 600;
+    margin-left: 100px;
+    color: var(--text-color);
+}
+
+.member_email:active{
+    color: var(--title-text-color);
+}
+
+
+/* ****************** MEMBERSHIP STYLE ENDS***************** */
